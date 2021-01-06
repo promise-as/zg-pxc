@@ -50,7 +50,7 @@ select:-ms-input-placeholder {
 
 .point::before, .nav li, .banner .days .num, .banner .days .num span, .consult li, .one-take .hint span, .guide .g-top .item .d-row span, .online .fr .thead i,
 .online .fr .thead span, .online .fr .tbody .choice li em, .play .r-head i, .data .thead i,
-.data .thead span, .weal .coupon li {
+.data .thead span, .weal .coupon li, .right-side .contact span {
   display: inline-block;
   *zoom: 1;
   *display: inline;
@@ -485,6 +485,9 @@ body {
   border: solid 1px #dadada;
   padding-left: 75px;
   background: url(../images/icon_1.png) no-repeat left;
+}
+.guide .g-top .third li a {
+  display: block;
 }
 .guide .g-top .third li:nth-child(2) {
   background: url(../images/icon_2.png) no-repeat left;
@@ -1232,6 +1235,131 @@ body {
   background-color: #3a3b3e;
   color: #666666;
   text-align: center;
+}
+
+.left-side {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 177px;
+  text-align: center;
+}
+.left-side .s-head {
+  padding: 13px 0 10px;
+  background: url(../images/side_1.png) no-repeat;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.left-side .s-head span {
+  display: block;
+  padding-top: 22px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ffdc7e;
+}
+.left-side ul {
+  padding: 0 19px;
+}
+.left-side li {
+  line-height: 40px;
+  background: #fff;
+  box-shadow: 0px 2px 20px 0px rgba(79, 79, 79, 0.21);
+}
+.left-side li a {
+  display: block;
+  color: #444444;
+  transition: transform 0.5s;
+}
+.left-side li a:hover {
+  transform: translateY(-3px);
+}
+.left-side li:nth-child(2n) a {
+  color: #e15500;
+}
+.left-side .s-bottom {
+  padding: 0 19px 0 20px;
+}
+.left-side .sign-in {
+  padding: 9px 6px 44px;
+  background: url(../images/side_2.png) no-repeat;
+}
+.left-side input {
+  width: 100%;
+  height: 37px;
+  line-height: 37px;
+  border-radius: 3px;
+  margin-bottom: 7px;
+  background-color: #ffffff;
+}
+.left-side .submit {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  background-image: linear-gradient(0deg, #ff4f37 0%, #ff8e52 100%);
+}
+.left-side .black-to-top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 138px;
+  height: 51px;
+  cursor: pointer;
+}
+
+.right-side {
+  position: fixed;
+  top: 22%;
+  right: 0;
+  width: 120px;
+  padding: 114px 12px 65px;
+  background: url(../images/side_3.png) no-repeat;
+  text-align: center;
+}
+.right-side .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 9px;
+  right: 11px;
+  cursor: pointer;
+}
+.right-side .contact {
+  padding: 9px 3px 0 4px;
+}
+.right-side .contact a {
+  display: block;
+  line-height: 32px;
+  font-size: 16px;
+  color: #444;
+  border-bottom: 1px solid #e8e8e8;
+  transition: transform 1s;
+}
+.right-side .contact a:hover {
+  transform: translateY(-3px);
+}
+.right-side .contact a:last-child {
+  border-bottom: 0;
+}
+.right-side .contact span {
+  width: 39px;
+  height: 18px;
+  line-height: 18px;
+  margin-left: 5px;
+  background-image: linear-gradient(-56deg, #ff4f37 0%, #ff8e52 100%);
+  border-radius: 9px;
+  color: #fff;
+  font-size: 12px;
+}
+.right-side .black-to-top {
+  position: absolute;
+  bottom: 0;
+  width: 86%;
+  height: 60px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=index.css.map */

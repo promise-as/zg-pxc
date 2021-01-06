@@ -1,6 +1,6 @@
 charset = 'UTF-8';
 $(function () {
-  // theaMsForm($('.sign-in'));
+  theaMsForm($('.sign-in'));
 
   // 单选
   function radio(btn, cont, classname) {
@@ -26,46 +26,58 @@ $(function () {
     $('#plan').val($('.guide .d-row .on').text());
   });
 
-  // // 考试时间倒计时
-  // var start = new Date();
-  // var end = new Date("2021/05/25");
-  // function countTime(start, end) {
-  //   const month = end.getMonth() - start.getMonth();
-  //   let days = 0;
-  //   switch (month) {
-  //     case 4:
-  //       days = 31 - start.getDate() + 28 + 31 + 30 + end.getDate();
-  //       break;
-  //     case 3:
-  //       days = 28 - start.getDate() + 31 + 30 + end.getDate();
-  //       break;
-  //     case 2:
-  //       days = 31 - start.getDate() + 30 + end.getDate();
-  //       break;
-  //     case 1:
-  //       days = 30 - start.getDate() + end.getDate();
-  //       break;
-  //     default:
-  //       days = end.getDate() - start.getDate();
-  //   }
-  //   return days;
-  // }
-  // // 动态赋值天数
-  // const days = countTime(start, end).toString();
-  // function fillDate(ele, days){
-  //   for(let i = 0; i < days.length; i++){
-  //     let $span = $('<span>')
-  //     $span.text(days[i])
-  //     ele.append($span);
-  //   }
-  // }
-  // fillDate($('#days'), days);
+  // 考试时间倒计时
+  var start = new Date();
+  var end = new Date("2021/05/25");
+  function countTime(start, end) {
+    const month = end.getMonth() - start.getMonth();
+    let days = 0;
+    switch (month) {
+      case 4:
+        days = 31 - start.getDate() + 28 + 31 + 30 + end.getDate();
+        break;
+      case 3:
+        days = 28 - start.getDate() + 31 + 30 + end.getDate();
+        break;
+      case 2:
+        days = 31 - start.getDate() + 30 + end.getDate();
+        break;
+      case 1:
+        days = 30 - start.getDate() + end.getDate();
+        break;
+      default:
+        days = end.getDate() - start.getDate();
+    }
+    return days;
+  }
+  // 动态赋值天数
+  const days = countTime(start, end).toString();
+  function fillDate(ele, days) {
+    for (let i = 0; i < days.length; i++) {
+      let $span = $('<span>')
+      $span.text(days[i])
+      ele.append($span);
+    }
+  }
+  fillDate($('#days'), days);
 
-  function playVideo(video, btn){
-    $(btn).click(function(){
+  function playVideo(video, btn) {
+    $(btn).click(function () {
       $(video)[0].play();
     });
   };
   playVideo('.video', '.test-play');
+
+  // 关闭侧边导航
+  $('.close').click(function () {
+    $('.right-side').hide();
+  });
+
+  // 回到顶部
+  $('.black-to-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    });
+  });
 
 });
