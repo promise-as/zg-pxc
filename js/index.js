@@ -64,6 +64,9 @@ $(function () {
   function playVideo(video, btn, classname) {
     $(btn).each(function(i){
       $(this).click(function () {
+        $(video).map(function(index, item){
+          item.pause(); // 暂停
+        })
         $($(video)[i]).addClass(classname).siblings().removeClass(classname);
         $($(video)[i])[0].play();
       });
