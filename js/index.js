@@ -61,12 +61,15 @@ $(function () {
   }
   fillDate($('#days'), days);
 
-  function playVideo(video, btn) {
-    $(btn).click(function () {
-      $(video)[0].play();
+  function playVideo(video, btn, classname) {
+    $(btn).each(function(i){
+      $(this).click(function () {
+        $($(video)[i]).addClass(classname).siblings().removeClass(classname);
+        $($(video)[i])[0].play();
+      });
     });
   };
-  playVideo('.video', '.test-play');
+  playVideo('.video', '.test-play', 'active');
 
   // 关闭侧边导航
   $('.close').click(function () {

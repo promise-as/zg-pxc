@@ -856,8 +856,12 @@ body {
   height: 472px;
 }
 .play .fl .video {
+  display: none;
   width: 100%;
   height: 100%;
+}
+.play .fl .video.active {
+  display: block;
 }
 .play .fr {
   width: 360px;
