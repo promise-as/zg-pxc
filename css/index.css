@@ -453,9 +453,12 @@ body {
 }
 .guide .g-top .second input {
   width: 100%;
-  height: 41px;
+  height: 49px;
   margin-bottom: 0;
-  line-height: 40px;
+  line-height: 49px;
+}
+.guide .g-top .second .submit {
+  margin-bottom: 20px;
 }
 .guide .g-top .second .hint {
   font-size: 16px;
@@ -862,6 +865,10 @@ body {
 }
 .play .fl .video.active {
   display: block;
+}
+.play .fl .video .ccH5Poster img {
+  width: 100%;
+  height: 100%;
 }
 .play .fr {
   width: 360px;
