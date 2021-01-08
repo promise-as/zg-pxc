@@ -882,23 +882,23 @@ body {
   margin-left: 9px;
   background: url(../images/down.png) no-repeat;
 }
-.play ul {
+.play .fr ul {
   padding: 30px 28px 0 20px;
 }
-.play li {
+.play .fr li {
   margin-bottom: 11px;
   font-size: 16px;
   line-height: 29px;
   color: #666666;
 }
-.play li a {
+.play .fr li a {
   display: block;
 }
-.play li a:hover span {
+.play .fr li a:hover span {
   background-color: #639deb;
   color: #fff;
 }
-.play li span {
+.play .fr li span {
   float: right;
   width: 48px;
   height: 27px;
@@ -908,11 +908,11 @@ body {
   color: #639deb;
   text-align: center;
 }
-.play li .test-play span {
+.play .fr li .test-play span {
   border: solid 1px #ff8300;
   color: #ff8300;
 }
-.play li .test-play:hover span {
+.play .fr li .test-play:hover span {
   background-color: #ff8300;
   color: #fff;
 }

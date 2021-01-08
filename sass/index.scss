@@ -943,42 +943,44 @@ body {
       background: url(../images/down.png) no-repeat;
     }
   }
-  ul {
-    padding: 30px 28px 0 20px;
-  }
-  li {
-    margin-bottom: 11px;
-    font-size: 16px;
-    line-height: 29px;
-    color: #666666;
-    a {
-      display: block;
-      &:hover {
-        span {
-          background-color: #639deb;
-          color: #fff;
+  .fr{
+    ul {
+      padding: 30px 28px 0 20px;
+    }
+    li {
+      margin-bottom: 11px;
+      font-size: 16px;
+      line-height: 29px;
+      color: #666666;
+      a {
+        display: block;
+        &:hover {
+          span {
+            background-color: #639deb;
+            color: #fff;
+          }
         }
       }
-    }
-    span {
-      float: right;
-      width: 48px;
-      height: 27px;
-      line-height: 27px;
-      background-color: #ffffff;
-      border: solid 1px #639deb;
-      color: #639deb;
-      text-align: center;
-    }
-    .test-play {
       span {
-        border: solid 1px #ff8300;
-        color: #ff8300;
+        float: right;
+        width: 48px;
+        height: 27px;
+        line-height: 27px;
+        background-color: #ffffff;
+        border: solid 1px #639deb;
+        color: #639deb;
+        text-align: center;
       }
-      &:hover {
+      .test-play {
         span {
-          background-color: #ff8300;
-          color: #fff;
+          border: solid 1px #ff8300;
+          color: #ff8300;
+        }
+        &:hover {
+          span {
+            background-color: #ff8300;
+            color: #fff;
+          }
         }
       }
     }

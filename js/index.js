@@ -61,14 +61,17 @@ $(function () {
   }
   fillDate($('#days'), days);
 
+  // 视频播放
   function playVideo(video, btn, classname) {
-    $(btn).each(function(i){
+    $(btn).each(function (i) {
       $(this).click(function () {
-        $(video).map(function(index, item){
-          item.pause(); // 暂停
+        $(video).map(function (index, item) {
+          $(item).find('video')[0].pause(); // 暂停
+          $($(video)[i]).find('video')[0].play();
+          // $('.' + classname).find('video')[0].play();
         })
+        // 类的切换
         $($(video)[i]).addClass(classname).siblings().removeClass(classname);
-        $($(video)[i])[0].play();
       });
     });
   };
