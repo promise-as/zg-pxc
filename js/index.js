@@ -62,20 +62,21 @@ $(function () {
   fillDate($('#days'), days);
 
   // 视频播放
-  function playVideo(video, btn, classname) {
+  function playVideo(video, btn, title, classname) {
     $(btn).each(function (i) {
       $(this).click(function () {
         $(video).map(function (index, item) {
           $(item).find('video')[0].pause(); // 暂停
           $($(video)[i]).find('video')[0].play();
-          // $('.' + classname).find('video')[0].play();
         })
         // 类的切换
         $($(video)[i]).addClass(classname).siblings().removeClass(classname);
+        // 类的切换
+        $($(title)[i]).addClass(classname).siblings().removeClass(classname);
       });
     });
   };
-  playVideo('.video', '.test-play', 'active');
+  playVideo('.video', '.test-play', '.p-head', 'active');
 
   // 关闭侧边导航
   $('.close').click(function () {

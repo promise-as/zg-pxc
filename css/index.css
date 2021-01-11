@@ -37,18 +37,18 @@ select:-ms-input-placeholder {
   font-size: inherit;
 }
 
-.banner, .banner .item ul, .one-take .merit, .guide .g-top, .guide .g-top .second .d-row, .guide .g-bottom .sign-in, .exam .tab ul, .online .o-cont, .online .fr .thead ul, .online .fr .tbody .answer, .all-course .sign-in, .play .p-cont, .data .d-cont, .data .thead ul, .data .tbody li, .course ul, .weal .explain, .weal .explain .fr .sign-in {
+.banner, .banner .item ul, .one-take .merit, .guide .g-top, .guide .g-top .second .d-row, .guide .g-bottom .sign-in, .exam .tab ul, .online .o-cont, .online .fr .thead ul, .online .fr .tbody .answer, .all-course .sign-in, .play .p-cont, .data .d-cont, .data .thead ul, .data .tbody li, .course ul, .weal .explain {
   zoom: 1;
 }
-.banner:after, .banner .item ul:after, .one-take .merit:after, .guide .g-top:after, .guide .g-top .second .d-row:after, .guide .g-bottom .sign-in:after, .exam .tab ul:after, .online .o-cont:after, .online .fr .thead ul:after, .online .fr .tbody .answer:after, .all-course .sign-in:after, .play .p-cont:after, .data .d-cont:after, .data .thead ul:after, .data .tbody li:after, .course ul:after, .weal .explain:after, .weal .explain .fr .sign-in:after {
+.banner:after, .banner .item ul:after, .one-take .merit:after, .guide .g-top:after, .guide .g-top .second .d-row:after, .guide .g-bottom .sign-in:after, .exam .tab ul:after, .online .o-cont:after, .online .fr .thead ul:after, .online .fr .tbody .answer:after, .all-course .sign-in:after, .play .p-cont:after, .data .d-cont:after, .data .thead ul:after, .data .tbody li:after, .course ul:after, .weal .explain:after {
   clear: both;
 }
-.banner:before, .banner .item ul:before, .one-take .merit:before, .guide .g-top:before, .guide .g-top .second .d-row:before, .guide .g-bottom .sign-in:before, .exam .tab ul:before, .online .o-cont:before, .online .fr .thead ul:before, .online .fr .tbody .answer:before, .all-course .sign-in:before, .play .p-cont:before, .data .d-cont:before, .data .thead ul:before, .data .tbody li:before, .course ul:before, .weal .explain:before, .weal .explain .fr .sign-in:before, .banner:after, .banner .item ul:after, .one-take .merit:after, .guide .g-top:after, .guide .g-top .second .d-row:after, .guide .g-bottom .sign-in:after, .exam .tab ul:after, .online .o-cont:after, .online .fr .thead ul:after, .online .fr .tbody .answer:after, .all-course .sign-in:after, .play .p-cont:after, .data .d-cont:after, .data .thead ul:after, .data .tbody li:after, .course ul:after, .weal .explain:after, .weal .explain .fr .sign-in:after {
+.banner:before, .banner .item ul:before, .one-take .merit:before, .guide .g-top:before, .guide .g-top .second .d-row:before, .guide .g-bottom .sign-in:before, .exam .tab ul:before, .online .o-cont:before, .online .fr .thead ul:before, .online .fr .tbody .answer:before, .all-course .sign-in:before, .play .p-cont:before, .data .d-cont:before, .data .thead ul:before, .data .tbody li:before, .course ul:before, .weal .explain:before, .banner:after, .banner .item ul:after, .one-take .merit:after, .guide .g-top:after, .guide .g-top .second .d-row:after, .guide .g-bottom .sign-in:after, .exam .tab ul:after, .online .o-cont:after, .online .fr .thead ul:after, .online .fr .tbody .answer:after, .all-course .sign-in:after, .play .p-cont:after, .data .d-cont:after, .data .thead ul:after, .data .tbody li:after, .course ul:after, .weal .explain:after {
   content: "";
   display: table;
 }
 
-.point::before, .nav li, .banner .days .num, .banner .days .num span, .consult li, .one-take .hint span, .guide .g-top .item .d-row span, .online .fr .thead i,
+.point::before, .nav li, .banner .days .num, .banner .days .num span, .consult li, .one-take .hint span, .guide .g-top .item .d-row span, .guide .g-top .first .sign-in .r-title, .online .fr .thead i,
 .online .fr .thead span, .online .fr .tbody .choice li em, .play .r-head i, .data .thead i,
 .data .thead span, .weal .coupon li, .right-side .contact span {
   display: inline-block;
@@ -369,7 +369,7 @@ body {
   padding: 17px 18px 0;
 }
 .guide .g-top .item .d-row {
-  margin-bottom: 26px;
+  margin-bottom: 22px;
 }
 .guide .g-top .item .d-row span {
   width: 89px;
@@ -387,9 +387,9 @@ body {
   font-weight: bold;
 }
 .guide .g-top .item input {
-  width: 171px;
+  width: 234px;
   height: 49px;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   line-height: 49px;
   background-color: #f2f2f2;
 }
@@ -419,6 +419,9 @@ body {
 }
 .guide .g-top .first .d-row span:nth-of-type(1) {
   margin-left: 9px;
+}
+.guide .g-top .first .sign-in .r-title {
+  vertical-align: middle;
 }
 .guide .g-top .second {
   width: 388px;
@@ -795,13 +798,14 @@ body {
 }
 
 .all-course {
-  padding: 29px 0 25px 460px;
+  padding: 29px 0 25px 560px;
   background: url(../images/form_1.png) no-repeat;
 }
 .all-course input {
   float: left;
   width: 225px;
   height: 50px;
+  margin-right: 20px;
   line-height: 50px;
   background-color: #ffffff;
 }
@@ -835,9 +839,13 @@ body {
   background-color: #f2f2f2;
 }
 .play .p-head {
+  display: none;
   margin-bottom: 26px;
   font-size: 26px;
   line-height: 44px;
+}
+.play .p-head.active {
+  display: block;
 }
 .play .p-head span {
   color: #2c60c8;
@@ -866,7 +874,11 @@ body {
 .play .fl .video.active {
   display: block;
 }
+.play .fl .video .ccH5Poster {
+  background: url(../images/law.png) no-repeat;
+}
 .play .fl .video .ccH5Poster img {
+  display: none;
   width: 100%;
   height: 100%;
 }
@@ -1204,9 +1216,9 @@ body {
   width: 544px;
 }
 .weal .explain .fr input {
-  float: left;
-  width: 266px;
+  width: 100%;
   height: 50px;
+  margin-bottom: 13px;
   line-height: 50px;
   background-color: #ffffff;
 }
